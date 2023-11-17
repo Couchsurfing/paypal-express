@@ -14,8 +14,8 @@ Gem::Specification.new do |s|
   s.executables = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.files = `git ls-files`.split("\n")
   s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.add_dependency 'activesupport', '>= 2.3', '< 6'
-  s.add_dependency 'rest-client', '~> 1.8'
+  s.add_dependency 'activesupport', '>= 2.3', '< 8'
+  s.add_dependency 'rest-client', '~> 2'
   s.add_dependency 'attr_required', '~> 1.0'
   s.add_development_dependency 'rake', '~> 12.0', '>= 12.0.0'
   s.add_development_dependency 'simplecov', '~> 0'
